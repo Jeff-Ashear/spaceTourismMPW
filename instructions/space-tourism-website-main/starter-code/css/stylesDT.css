@@ -1,12 +1,21 @@
 body {
-    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-image: url(../assets/home/background-home-desktop.jpg);
 }
 
 header {
     color: #FFFFFF;
-    margin-bottom: 1000px;
-    /* position: relative; */
+    /* margin-bottom: 1000px; */
+    position: relative;
 } 
+
+.headerLogo {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 55px;
+    top: 64px;
+    
+    background: #0B0D17;}
 
 .headerBorder {   
     /* rectangle */
@@ -18,6 +27,19 @@ header {
 
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
+}
+
+.headerDeco {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 167px;
+    top: 88px;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 2;
 }
 
 .headerMenu {
@@ -33,6 +55,12 @@ header {
     color: #FFFFFF;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.headerItemNum {
+    font-weight: 550;
 }
 
 .copy { 
@@ -52,6 +80,24 @@ header {
     height: 274px;
     width: 274px;
     position: absolute;
+}
+
+.copyBox {
+    position: absolute;
+    width: 450px;
+    height: 382px;
+    left: 165px;
+    top: 387px;
+
+    color: #FFFFFF;
+}
+
+.introText {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+    font-family: 'Bellefair', sans-serif;
 }
 
 #boldWord {
