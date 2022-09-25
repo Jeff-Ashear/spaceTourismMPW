@@ -1,12 +1,10 @@
-// applies correct background image by breakpoint to index.html.
-
 $mobile: 767px;
 $tablet: 768px;
 $desktop: 1024px;
 
 @mixin backgroundImage() {
     body {
-        // background-position: center;
+        background-position: center;
         background-size: cover;
         background-image: url('../assets/home/background-home-mobile.jpg');
         @media screen and (min-width: $tablet) {
