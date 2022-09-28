@@ -1,0 +1,41 @@
+//applies styling to the navbar on all pages.
+    //note that the tab indicator is handeled seperately in the file tbd for each page.
+
+$mobile: 767px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin navbar() {
+    .header {
+        color: #FFFFFF;
+        position: relative;
+    }
+
+    .headerLogo {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 6.4vw;
+        top: 3.5vh;
+    }
+
+    @media screen and (min-width: $tablet) {
+        .headerLogo {
+            width: 48px;
+            height: 48px;
+            left: 6.25vw;
+            top: 4.6vh;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        .headerLogo {
+            width: 48px;
+            height: 48px;
+            left: 3.8vw;
+            top: 7.1vh; 
+        }
+    }
+}
+
+@include navbar();

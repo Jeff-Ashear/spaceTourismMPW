@@ -8,16 +8,16 @@ $desktop: 1024px;
     body {
         // background-position: center;
         background-size: cover;
-        background-image: url('../assets/home/background-home-mobile.jpg');
+        background-image: url('../../assets/home/background-home-mobile.jpg');
+        
         @media screen and (min-width: $tablet) {
-            background-image: url('../assets/home/background-home-tablet.jpg')
+            background-image: url('../../assets/home/background-home-tablet.jpg')
         }
     
         @media screen and (min-width: $desktop) {
-            background-image: url('../assets/home/background-home-desktop.jpg')
+            background-image: url('../../assets/home/background-home-desktop.jpg')
         }
     }
-
 }
 
 @include backgroundImage();
