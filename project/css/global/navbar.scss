@@ -28,6 +28,12 @@ $desktop: 1024px;
 
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px);
+
+        &.show {
+            right: -69vw;
+        }
+
+    
     }
 
     @media screen and (min-width: $tablet) {
