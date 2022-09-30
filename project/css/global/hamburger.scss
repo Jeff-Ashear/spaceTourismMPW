@@ -1,0 +1,53 @@
+// applies style and handles presnce of hamburger menu toggle on mobile-sized screens in conjunction with /js/hamburger
+
+$mobile: 767px;
+$tablet: 768px;
+$desktop: 1024px;
+
+
+@mixin hamburger-menu() {  
+    
+    .hamburger-menu {
+        font-size: 40px;
+        width: 1em;
+        height: 1em;
+        padding: 0.2em;
+        // background-color: #0af;
+        cursor: pointer;
+    
+        position: absolute;
+        right: 6.4vw;
+        top: 3.5vh;
+        z-index: 10;
+    
+        div {
+            background-color: white;
+            width: 1em;
+            height: 0.2em;
+            margin-bottom: 0.2em;
+            transition: all 0.3s ease-out;
+        }
+    
+        &.open {
+            .one {
+                transform: translateY(0.4em) rotate(45deg);
+            }
+            .two {
+                opacity: 0;
+            }
+            .three {
+                transform: translateY(-0.4em) rotate(-45deg)
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: $tablet) {
+        .hamburger-menu {
+            display: none;
+        }
+        
+    }
+}
+
+@include hamburger-menu()
