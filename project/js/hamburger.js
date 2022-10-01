@@ -1,5 +1,4 @@
 var menus = document.getElementsByClassName('hamburger-menu');
-// var navMenu = document.getElementsByClassName('headerBorder');
 
 [].forEach.call(menus, function(m) {
     m.addEventListener('click', function() {
@@ -8,7 +7,6 @@ var menus = document.getElementsByClassName('hamburger-menu');
 })
 
 function menuOnClick() {   
-    console.log('clicked')
     document.getElementById('navMenu').classList.toggle('show')
 }
 
