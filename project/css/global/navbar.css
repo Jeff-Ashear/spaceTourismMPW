@@ -18,17 +18,20 @@
 }
 
 .headerBorder {
-  height: 105vh;
+  height: 107vh;
   width: 67vw;
   position: absolute;
   top: -10px;
-  right: -69vw;
+  right: -10px;
+  transition: all 0.5s ease-in-out;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
   justify-content: center;
+  transform-origin: top right;
+  transform: rotate(-90deg);
 }
 .headerBorder.show {
-  right: -10px;
+  transform: rotate(0deg);
 }
 .headerBorder .headerMenu {
   margin-top: 15vh;
