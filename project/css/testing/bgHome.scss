@@ -1,15 +1,20 @@
 // reconstruction for testing purposes.
-
+$tiny: 50px;
+$small: 593px;
 $mobile: 767px;
 $tablet: 768px;
 $desktop: 1024px;
-$ultrawide: 1068px;
+$ultrawide: 1674px;
 
 @mixin bgHome {
 
     body {
-        @media screen and (max-width: $mobile) {
-            background-image: url(../../assets/home/background-home-mobile.jpg);
+        background-image: url(../../assets/home/background-home-mobile.jpg);
+
+        @media screen and (min-width: $tiny) and (max-width: $small) {
+            background-size: auto 100vh;         
+        }
+        @media screen and (min-width: $small) {
             background-size: 100vw auto;
         }
         

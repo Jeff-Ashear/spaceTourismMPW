@@ -1,6 +1,13 @@
-@media screen and (max-width: 767px) {
+body {
+  background-image: url(../../assets/home/background-home-mobile.jpg);
+}
+@media screen and (min-width: 50px) and (max-width: 593px) {
   body {
-    background-image: url(../../assets/home/background-home-mobile.jpg);
+    background-size: auto 100vh;
+  }
+}
+@media screen and (min-width: 593px) {
+  body {
     background-size: 100vw auto;
   }
 }
@@ -16,7 +23,7 @@
     background-size: auto 100vh;
   }
 }
-@media screen and (min-width: 1068px) {
+@media screen and (min-width: 1674px) {
   body {
     background-image: url(../../assets/home/background-home-desktop.jpg);
     background-size: 100vw auto;

@@ -6,6 +6,7 @@
   position: absolute;
   right: 6.4vw;
   top: 4vh;
+  z-index: 10;
 }
 .hamburger-menu div {
   width: 1em;
@@ -18,10 +19,15 @@
   transform: translateY(0.4em) rotate(45deg);
 }
 .hamburger-menu.open .two {
-  height: 0;
+  opacity: 0;
 }
 .hamburger-menu.open .three {
-  transform: translateY(-0.2em) rotate(-45deg);
+  transform: translateY(-0.4em) rotate(-45deg);
+}
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=burger.css.map */
