@@ -7,7 +7,7 @@ $desktop: 1024px;
 @mixin backgroundImage() {
     body {
         // background-position: center;
-        background-size: cover;
+        background-size:  auto 100vh;
         background-image: url('../../assets/home/background-home-mobile.jpg');
         
         @media screen and (min-width: $tablet) {

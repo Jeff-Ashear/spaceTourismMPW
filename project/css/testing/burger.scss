@@ -1,0 +1,42 @@
+// for testing purposes
+
+$mobile: 767px;
+$tablet: 768px;
+
+@mixin hamburger-menu() {
+    .hamburger-menu {
+        font-size: 50px;
+        padding: 4px;
+        width: 1em;
+        height: 1em;
+
+        position: absolute;
+        right: 6.4vw;
+        top: 4vh;
+
+        div {
+            width: 1em;
+            height: 0.2em;
+            background-color: white;
+            margin-bottom: .2em;
+
+            transition: all 0.3s ease-out;
+        }
+
+        &.open {
+            .one {
+                transform: translateY(0.4em) rotate(45deg);
+            }
+
+            .two {
+                height: 0;
+            }
+
+            .three {
+                transform: translateY(-0.2em) rotate(-45deg);
+            }
+        }
+    }
+}
+
+@include hamburger-menu()
