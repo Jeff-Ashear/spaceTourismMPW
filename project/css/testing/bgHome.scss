@@ -4,7 +4,7 @@ $small: 593px;
 $mobile: 767px;
 $tablet: 768px;
 $desktop: 1024px;
-$ultrawide: 1674px;
+$ultrawide: 1605px;
 
 @mixin bgHome {
 
@@ -29,7 +29,6 @@ $ultrawide: 1674px;
         }
 
         @media screen and (min-width: $ultrawide) {
-            background-image: url(../../assets/home/background-home-desktop.jpg);
             background-size: 100vw auto;
         }
     }

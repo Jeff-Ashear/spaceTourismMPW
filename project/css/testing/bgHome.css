@@ -23,9 +23,8 @@ body {
     background-size: auto 100vh;
   }
 }
-@media screen and (min-width: 1674px) {
+@media screen and (min-width: 1605px) {
   body {
-    background-image: url(../../assets/home/background-home-desktop.jpg);
     background-size: 100vw auto;
   }
 }
