@@ -24,15 +24,21 @@ $desktop: 1024px;
         }
     }
 
+    .headerMenu {
+        margin-top: 20vh;
+        margin-left: 10vw;
+    }
+
     .headerItem {
         color: #ffffff;
         font-family: 'Barlow Condensed', 'sans-serif';
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 400;
 
         text-decoration: none;
         
         display: block;
+        margin-bottom: 5vh;
     }
 
     .headerItemNum {
