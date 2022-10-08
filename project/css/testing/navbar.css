@@ -1,3 +1,9 @@
+.headerLogo {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
 .headerBorder {
   width: 67vw;
   height: 105vh;
@@ -31,6 +37,23 @@
 
 .headerItemNum {
   font-weight: 700;
+}
+
+@media screen and (min-width: 50px) {
+  .headerLogo {
+    transform: scale(40px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .headerLogo {
+    left: 39px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .headerLogo {
+    left: 55px;
+    top: 65px;
+  }
 }
 
 /*# sourceMappingURL=navbar.css.map */

@@ -1,11 +1,9 @@
-// for testing purposes
-
 $mobile: 767px;
 $tablet: 768px;
 
 @mixin hamburger-menu() {
     .hamburger-menu {
-        font-size: 50px;
+        font-size: 30px;
         padding: 4px;
         width: 1em;
         height: 1em;
@@ -17,9 +15,9 @@ $tablet: 768px;
 
         div {
             width: 1em;
-            height: 0.2em;
+            height: 0.1em;
             background-color: white;
-            margin-bottom: .2em;
+            margin-bottom: .3em;
 
             transition: all 0.3s ease-out;
         }

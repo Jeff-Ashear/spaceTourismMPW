@@ -1,9 +1,16 @@
 // handles the navbar toggle animations and stylings per breakpoint.
+$mobile: 50px;
 $tablet: 768px;
 $desktop: 1024px;
 
 
 @mixin navMenu() {
+
+    .headerLogo {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
 
     .headerBorder {
         width: 67vw;
@@ -45,7 +52,24 @@ $desktop: 1024px;
         font-weight: 700;
     }
 
+    @media screen and (min-width: $mobile) {
+        .headerLogo {
+            transform: scale(40px);
+        }
+    }
 
+    @media screen and (min-width: $tablet) {
+        .headerLogo {
+            left: 39px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        .headerLogo {
+            left: 55px;
+            top: 65px;
+        }
+    }
 }
 
 @include navMenu();
