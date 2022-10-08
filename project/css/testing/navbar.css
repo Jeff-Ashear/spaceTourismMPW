@@ -1,7 +1,7 @@
 .headerLogo {
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 3.6vh;
+  left: 6.4vw;
 }
 
 .headerBorder {
@@ -9,7 +9,7 @@
   height: 105vh;
   position: absolute;
   top: 0;
-  right: -10px;
+  right: -3vw;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
   transform-origin: top right;
@@ -46,12 +46,12 @@
 }
 @media screen and (min-width: 768px) {
   .headerLogo {
-    left: 39px;
+    left: 5.1vw;
   }
 }
 @media screen and (min-width: 1024px) {
   .headerLogo {
-    left: 55px;
+    left: 5.4vw;
     top: 65px;
   }
 }

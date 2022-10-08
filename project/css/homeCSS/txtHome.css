@@ -1,0 +1,25 @@
+.copyBox {
+  position: absolute;
+  left: 6.4vw;
+  top: 17vh;
+  color: #ffffff;
+  text-align: center;
+}
+
+.introText {
+  position: absolute;
+  text-align: center;
+  line-height: 3vh;
+  font-family: "Barlow Condensed", "sans-serif";
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.buzzWord {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+/*# sourceMappingURL=txtHome.css.map */
