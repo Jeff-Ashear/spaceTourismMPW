@@ -3,18 +3,25 @@ $mobile: 50px;
 $tablet: 768px;
 $desktop: 1024px;
 
+.middleDiv {
+    // position: relative;
+}
+
 @mixin textHome() {
    .copyBox {
     position: absolute;
     left: 6.4vw;
-    top: 17vh;
+    top: 12vh;
 
     color: #ffffff;
-    text-align: center;
+    // text-align: center;
    } 
 
    .introText {
     position: absolute;
+    left: 12vw;
+    right: 12vw;
+    top: 10vh;
 
     text-align: center;
 
@@ -22,6 +29,9 @@ $desktop: 1024px;
     font-family: 'Barlow Condensed', 'sans-serif';
     font-style: normal;
     font-size: 2rem;
+    // letter-spacing: 0.7rem;
+
+    width: 70vw;
    } 
    
    .buzzWord {
@@ -29,6 +39,33 @@ $desktop: 1024px;
     font-style: normal;
     font-weight: 400;
     font-size: 4rem;
+
+    position: absolute;
+    top: 17vh;
+    text-align: center;
+   }
+
+   .copyText {
+    // position: absolute;
+   
+
+    position: absolute;
+height: 125px;
+left: 0%;
+right: 0%;
+// top: calc(50% - 125px/2 + 75.5px);
+ top: 39vh;
+    width: 87vw;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+
+text-align: center;
+
+color: #D0D6F9;
    }
 }
 
