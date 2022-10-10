@@ -1,70 +1,104 @@
-// handles the navbar toggle animations and stylings per breakpoint.
+// handles the navbar toggle animations at mobile sized viewports, and stylings per breakpoint.
 $mobile: 50px;
-$tablet: 768px;
+$tablet: 767px;
 $desktop: 1024px;
 
 
 @mixin navMenu() {
 
-    .header {
-        height: 60px;
-    }
-
-    .headerLogo {
-        position: absolute;
-        top: 3.6vh;
-        left: 6.4vw;
-    }
-
     .headerBorder {
-        width: 67vw;
-        height: 105vh;
-        position: absolute;
-        top: 0;
-        right: -3vw;
-
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px);
-
-        transform-origin: top right;
-        transform: rotate(-90deg);
-        transition: all 0.5s ease-out;
-
-        &.show {
-            transform: rotate(0deg);
-        }
-    }
-
-    .headerMenu {
-        margin-top: 20vh;
-        margin-left: 10vw;
     }
 
     .headerItem {
         color: #ffffff;
         font-family: 'Barlow Condensed', 'sans-serif';
-        font-size: 2rem;
         font-weight: 400;
-
         text-decoration: none;
-        
-        display: block;
-        margin-bottom: 5vh;
     }
 
-    .headerItemNum {
-        font-weight: 700;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+
+        .header {
+            height: 60px;
+        }
+
+        .headerLogo {
+            position: absolute;
+            top: 3.6vh;
+            left: 6.4vw;
+        }
+
+        .headerBorder {
+            width: 67vw;
+            height: 105vh;
+            position: absolute;
+            top: 0;
+            right: -3vw;
+
+            transform-origin: top right;
+            transform: rotate(-90deg);
+            transition: all 0.5s ease-out;
+
+            &.show {
+                transform: rotate(0deg);
+            }
+        }
+
+        .headerMenu {
+            margin-top: 20vh;
+            margin-left: 10vw;
+        }
+
+        .headerItem {
+            font-size: 2rem;
+            
+            display: block;
+            margin-bottom: 5vh;
+        }
+
+        .headerItemNum {
+            font-weight: 700;
+        }
     }
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: $mobile) {
         .headerLogo {
             transform: scale(40px);
         }
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
         .headerLogo {
             left: 5.1vw;
+        }
+
+        .headerBorder {
+            transform: rotate(0deg);
+
+            height: 9.4vh;
+            width: 59vw;
+
+            position: absolute;
+            right: 0;
+            top: 0;            
+        }
+
+        .headerMenu {
+            margin-top: auto;
+            margin-left: 10vw;
+            margin-right: auto;
+        }
+
+        .headerItemNum {
+            display: none;
+        }
+
+        .headerItem {
+            // display: inline;
+            text-align: center;
+            font-size: 1.2rem;
         }
     }
 

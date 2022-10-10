@@ -3,10 +3,6 @@ $mobile: 50px;
 $tablet: 768px;
 $desktop: 1024px;
 
-// .spacer {
-//     height: 17vh;
-// }
-
 @mixin textHome() {
 
     .middleDiv {
@@ -66,7 +62,6 @@ $desktop: 1024px;
 
     text-align: center;
     padding-top: calc(75px - 0.65rem);
-
    }
 }
 
