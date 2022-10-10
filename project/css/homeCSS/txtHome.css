@@ -1,48 +1,55 @@
+.middleDiv {
+  margin-top: 17%;
+}
+
 .copyBox {
-  position: absolute;
-  left: 6.4vw;
-  top: 12vh;
+  text-align: center;
   color: #ffffff;
 }
 
 .introText {
-  position: absolute;
-  left: 12vw;
-  right: 12vw;
-  top: 10vh;
-  text-align: center;
   line-height: 3vh;
   font-family: "Barlow Condensed", "sans-serif";
   font-style: normal;
   font-size: 2rem;
-  width: 70vw;
+  margin-bottom: 5vh;
 }
 
 .buzzWord {
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
-  font-size: 4rem;
-  position: absolute;
-  top: 17vh;
-  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5vh;
 }
 
 .copyText {
-  position: absolute;
-  height: 125px;
-  left: 0%;
-  right: 0%;
-  top: 39vh;
-  width: 87vw;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  /* or 167% */
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.accentTextOrb {
+  background-color: #ffffff;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accentText {
+  font-family: "Bellefair", "Sans-Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
   text-align: center;
-  color: #D0D6F9;
+  padding-top: calc(75px - 0.65rem);
 }
 
 /*# sourceMappingURL=txtHome.css.map */
