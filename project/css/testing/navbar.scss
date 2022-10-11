@@ -61,6 +61,17 @@ $desktop: 1024px;
         .headerItemNum {
             font-weight: 700;
         }
+
+        .headerActive {
+            width: 100;
+        }
+
+        .breadCrumb {
+            height: 100%;
+            width: 3px;
+            position: relative;
+            left: 0;
+        }
     }
 
     @media screen and (max-width: $mobile) {
@@ -71,7 +82,8 @@ $desktop: 1024px;
 
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
         .headerLogo {
-            left: 5.1vw;
+            margin-left: 5.1vw;
+            margin-top: 2.5vw;
         }
 
         .headerBorder {
@@ -86,7 +98,7 @@ $desktop: 1024px;
         }
 
         .headerMenu {
-            margin-top: auto;
+            margin-top: 3.5vh;
             margin-left: 10vw;
             margin-right: auto;
         }
@@ -96,9 +108,22 @@ $desktop: 1024px;
         }
 
         .headerItem {
-            // display: inline;
             text-align: center;
             font-size: 1.2rem;
+            padding-right: 1.2rem;
+        }
+
+        .headerActive {
+           display: inline-block;
+           height: 100%;
+        }
+
+        .breadCrumb {
+            height: 3px;
+            width: calc(100% - 0.6rem);
+            background-color: #ffffff;
+            position: relative;
+            top: 3.6vh;
         }
     }
 
