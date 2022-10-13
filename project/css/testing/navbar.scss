@@ -18,6 +18,10 @@ $desktop: 1024px;
         text-decoration: none;
     }
 
+    .breadCrumb {
+        background-color: #ffffff;
+    }
+
     @media screen and (min-width: $mobile) and (max-width: $tablet) {
 
         .header {
@@ -64,13 +68,15 @@ $desktop: 1024px;
 
         .headerActive {
             width: 100;
+            display: inline;
         }
 
         .breadCrumb {
             height: 100%;
             width: 3px;
+            display: inline-block;
             position: relative;
-            left: 0;
+            right: 0;
         }
     }
 
@@ -121,7 +127,6 @@ $desktop: 1024px;
         .breadCrumb {
             height: 3px;
             width: calc(100% - 0.6rem);
-            background-color: #ffffff;
             position: relative;
             top: 3.6vh;
         }

@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+.breadCrumb {
+  background-color: #ffffff;
+}
+
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .header {
     height: 60px;
@@ -46,12 +50,14 @@
   }
   .headerActive {
     width: 100;
+    display: inline;
   }
   .breadCrumb {
     height: 100%;
     width: 3px;
+    display: inline-block;
     position: relative;
-    left: 0;
+    right: 0;
   }
 }
 @media screen and (max-width: 50px) {
@@ -92,7 +98,6 @@
   .breadCrumb {
     height: 3px;
     width: calc(100% - 0.6rem);
-    background-color: #ffffff;
     position: relative;
     top: 3.6vh;
   }
