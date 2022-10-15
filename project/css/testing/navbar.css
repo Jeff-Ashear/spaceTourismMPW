@@ -62,7 +62,7 @@
 }
 @media screen and (max-width: 50px) {
   .headerLogo {
-    transform: scale(40px);
+    transform: scale(48px);
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
